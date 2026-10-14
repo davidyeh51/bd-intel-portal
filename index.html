@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4.1.3 業務開發戰情知識庫門戶 ｜ Business Development Intelligence Hub</title>
+  <meta name="description" content="大衛工作・4.1.3 業務開發戰情知識庫門戶：首發三星螺絲成型機（朝璟精機）深度商業模式解構、12頁無雜訊頂尖顧問簡報、全站即時多維檢索與持續擴充架構。">
+  
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            mckinsey: {
+              navy: '#051C2C',
+              royal: '#1E3A8A',
+              gold: '#D97706',
+              softGold: '#FEF3C7',
+              gray: '#F8FAFC'
+            },
+            bcg: {
+              dark: '#004F32',
+              emerald: '#177B57',
+              lime: '#29BA74',
+              softMint: '#DCFCE7'
+            },
+            accenture: {
+              purple: '#A100FF',
+              dark: '#111827',
+              cyan: '#06B6D4'
+            }
+          },
+          fontFamily: {
+            sans: ['"Inter"', '"Noto Sans TC"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom Scrollbar & Micro-interactions */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .badge-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .5; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen flex flex-col selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Top Announcement Bar -->
+  <header class="bg-mckinsey-navy text-white text-xs border-b border-slate-700 py-2 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-semibold bg-amber-500 text-slate-950 uppercase tracking-wider">
+          <i data-lucide="shield-alert" class="w-3 h-3 mr-1 inline"></i> 4.1.3 業務戰情更新
+        </span>
+        <span class="text-slate-300">首發：三星螺絲成型機（朝璟精機）深度商業模式・415萬客單價與合約判決・12頁無雜訊顧問簡報</span>
+      </div>
+      <div class="flex items-center space-x-4 text-slate-400">
+        <span><i data-lucide="calendar" class="w-3 h-3 inline mr-1"></i>2026-10-14</span>
+        <a href="https://github.com/davidyeh51/bd-intel-portal" target="_blank" class="hover:text-amber-400 transition flex items-center">
+          <i data-lucide="github" class="w-3.5 h-3.5 mr-1"></i>GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Navigation -->
+  <section class="bg-gradient-to-b from-slate-900 via-slate-800 to-mckinsey-navy text-white pt-10 pb-16 px-4 sm:px-8 border-b border-slate-700 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+        <div>
+          <div class="flex items-center space-x-3 mb-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 font-bold">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">DavidCloud・4.0 功能層級・4.1 業務開發</p>
+              <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">4.1.3 業務開發戰情知識庫門戶</h1>
+            </div>
+          </div>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl font-normal leading-relaxed">
+            整合競爭同業調研、開發商動態、跨國市場商情與前線作戰卡。以麥肯錫金字塔原理與無雜訊顧問簡報規範，將產業情資淬取為即戰力。
+          </p>
+        </div>
+
+        <!-- Quick Metrics Badges -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur">
+            <div class="text-2xl font-bold text-amber-400 font-mono">5+</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">收錄商情主題</div>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur">
+            <div class="text-2xl font-bold text-emerald-400 font-mono">12 頁</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">無雜訊簡報</div>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur">
+            <div class="text-2xl font-bold text-cyan-400 font-mono">8 種</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">顧問論法版型</div>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-xl p-3 backdrop-blur">
+            <div class="text-2xl font-bold text-purple-400 font-mono">100%</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">判決專利覆核</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-Time Search Bar -->
+      <div class="bg-white/10 backdrop-blur-md p-2 rounded-2xl border border-white/15 shadow-2xl flex flex-col sm:flex-row items-center gap-2">
+        <div class="relative w-full">
+          <i data-lucide="search" class="w-5 h-5 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2"></i>
+          <input 
+            type="text" 
+            id="searchInput"
+            placeholder="輸入關鍵字檢索（例：三星、朝璟、成型機、415萬、專利、雲豹、泰國、廖冠傑、李宛真）..." 
+            class="w-full bg-white text-slate-900 placeholder:text-slate-400 pl-12 pr-10 py-3.5 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-inner"
+            oninput="handleSearch()"
+          >
+          <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+        <div class="flex items-center space-x-2 w-full sm:w-auto shrink-0 justify-end">
+          <button onclick="scrollToFeatured()" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs uppercase tracking-wider transition flex items-center justify-center space-x-1.5 shadow-lg shadow-amber-500/20">
+            <i data-lucide="zap" class="w-4 h-4"></i>
+            <span>首發戰情專報</span>
+          </button>
+          <button onclick="openDeckModal(0)" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center space-x-1.5 shadow-lg shadow-emerald-600/20">
+            <i data-lucide="presentation" class="w-4 h-4"></i>
+            <span>播放簡報 (12頁)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Filter Pills -->
+      <div class="flex flex-wrap items-center gap-2 mt-4 text-xs">
+        <span class="text-slate-400 font-semibold mr-1">快捷篩選：</span>
+        <button onclick="filterCategory('all')" class="cat-pill active px-3 py-1.5 rounded-lg border border-white/20 bg-white/20 text-white font-medium hover:bg-white/30 transition">全部情報 (<span id="count-all">5</span>)</button>
+        <button onclick="filterCategory('market')" class="cat-pill px-3 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 font-medium hover:bg-white/20 transition">4.1.3.1 市場訊息 (<span id="count-market">2</span>)</button>
+        <button onclick="filterCategory('developer')" class="cat-pill px-3 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 font-medium hover:bg-white/20 transition">4.1.3.1 開發商 (<span id="count-developer">2</span>)</button>
+        <button onclick="filterCategory('global')" class="cat-pill px-3 py-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 font-medium hover:bg-white/20 transition">4.1.3.3 海外市場 (<span id="count-global">1</span>)</button>
+        <button onclick="filterCategory('deck')" class="cat-pill px-3 py-1.5 rounded-lg border border-amber-400/30 bg-amber-500/10 text-amber-300 font-medium hover:bg-amber-500/20 transition">
+          <i data-lucide="sparkles" class="w-3 h-3 inline mr-1"></i>含無雜訊顧問簡報
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-8 py-10 flex-grow w-full">
+
+    <!-- FEATURED DOSSIER: 三星螺絲成型機有限公司 (朝璟精機) -->
+    <section id="featured-dossier" class="mb-14">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-3 border-b border-slate-200">
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200">FEATURED DOSSIER</span>
+            <span class="text-xs text-slate-500">4.1.3.1 市場訊息 ｜ 深度商業模式調研</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">三星螺絲成型機有限公司（朝璟精機）實質商業模式與業務作戰指南</h2>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button onclick="copyBattleCard()" class="px-3.5 py-2 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold flex items-center space-x-1.5 shadow-sm transition">
+            <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-500"></i>
+            <span id="copyBtnText">複製 1 頁業務作戰卡</span>
+          </button>
+          <a href="./sansing_consulting_deck.pptx" download class="px-3.5 py-2 rounded-lg bg-mckinsey-navy hover:bg-slate-800 text-white text-xs font-semibold flex items-center space-x-1.5 shadow-sm transition">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-amber-400"></i>
+            <span>下載 .pptx 簡報檔</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Dossier Bento Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Key Intelligence Summary (7 cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Core Answer Card -->
+          <div class="glass-card rounded-2xl p-6 border-l-4 border-l-amber-500 shadow-sm">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+              <span class="font-bold text-amber-700 uppercase tracking-wider flex items-center">
+                <i data-lucide="help-circle" class="w-4 h-4 mr-1"></i> 核心問題回答
+              </span>
+              <span class="font-mono">實地查證覆核版</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">這間公司到底靠什麼賺錢？——「縫隙市場性價比套利 ＋ 極低固定成本」</h3>
+            <p class="text-sm text-slate-700 leading-relaxed mb-4">
+              三星螺絲成型機（朝璟精機體系）不靠品牌溢價，也不打中國式的低價傾銷。它在產業鏈的利基在於：
+              <strong>以單台 400～500 萬元的價格帶，提供日本關鍵件（軸承/鋼材）與自研專利夾具（翻轉/抑震），切入歐日機（1200萬+）買不起、大陸機（150萬）做不出的「汽機車特殊長衝程螺栓代工廠」</strong>。
+              全廠編制精簡在 20 人以內，大幅降低固定管銷，靠少量高毛利訂單即能確保穩健現金流。
+            </p>
+            
+            <!-- 4 Quick Fact Chips -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-3 border-t border-slate-100 text-xs">
+              <div class="bg-slate-50 p-2.5 rounded-lg">
+                <div class="text-slate-400 text-[10px]">資本額</div>
+                <div class="font-bold text-slate-800 font-mono">5,200 萬元</div>
+              </div>
+              <div class="bg-slate-50 p-2.5 rounded-lg">
+                <div class="text-slate-400 text-[10px]">廠房位置</div>
+                <div class="font-bold text-slate-800">雲林斗南大同路</div>
+              </div>
+              <div class="bg-slate-50 p-2.5 rounded-lg">
+                <div class="text-slate-400 text-[10px]">法院認證客單價</div>
+                <div class="font-bold text-amber-600 font-mono">NT$ 415 萬 (未稅)</div>
+              </div>
+              <div class="bg-slate-50 p-2.5 rounded-lg">
+                <div class="text-slate-400 text-[10px]">編制規模</div>
+                <div class="font-bold text-emerald-600 font-mono">&lt; 20 人精兵</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cash Flow Panorama Card -->
+          <div class="glass-card rounded-2xl p-6 shadow-sm">
+            <h4 class="text-sm font-bold text-slate-900 flex items-center mb-4">
+              <i data-lucide="git-merge" class="w-4 h-4 text-emerald-600 mr-2"></i>
+              商業模式全景圖：金流從哪裡進來、流到哪裡去？
+            </h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+              <!-- Inflows -->
+              <div class="bg-emerald-50/60 border border-emerald-200/80 rounded-xl p-4">
+                <div class="font-bold text-emerald-800 flex items-center mb-2">
+                  <i data-lucide="arrow-down-left" class="w-4 h-4 mr-1 text-emerald-600"></i>
+                  金流流入（Cash Inflows）
+                </div>
+                <ul class="space-y-2 text-slate-700">
+                  <li class="flex items-start">
+                    <span class="text-emerald-500 font-bold mr-1.5">•</span>
+                    <span><strong>長衝程特殊零件成型機</strong>：主力營收，單台 400~500 萬（合約載明 415 萬）。</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-emerald-500 font-bold mr-1.5">•</span>
+                    <span><strong>客製翻轉夾具模組加價</strong>：專利「會翻會夾組」，高毛利選配件（數十萬）。</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-emerald-500 font-bold mr-1.5">•</span>
+                    <span><strong>後續易耗備品供應</strong>：沖棒座、剪模、剪刀、牙板等常態消耗品。</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-emerald-500 font-bold mr-1.5">•</span>
+                    <span><strong>海外經銷出海</strong>：印度、土耳其、巴西汽機車零組件廠設備換新。</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Outflows -->
+              <div class="bg-slate-100/70 border border-slate-200 rounded-xl p-4">
+                <div class="font-bold text-slate-800 flex items-center mb-2">
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 mr-1 text-slate-500"></i>
+                  金流流出（Cash Outflows）
+                </div>
+                <ul class="space-y-2 text-slate-700">
+                  <li class="flex items-start">
+                    <span class="text-slate-400 font-bold mr-1.5">•</span>
+                    <span><strong>日台關鍵零組件採購</strong>：日本高精密滾柱軸承、特殊合金鋼；台製球墨鑄件。</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-slate-400 font-bold mr-1.5">•</span>
+                    <span><strong>機身龍門加工外包</strong>：導軌研磨銑削與曲軸高週波熱處理委外加工。</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-slate-400 font-bold mr-1.5">•</span>
+                    <span><strong>精簡組裝與試車人事</strong>：20 人以內老師傅組裝、電控、鏟花調試。</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-slate-400 font-bold mr-1.5">•</span>
+                    <span><strong>海外參展與行銷</strong>：Fastener World、Taiwantrade、印度螺絲展展位攤位費。</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Judicial & Patent Verification Footer -->
+            <div class="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between text-[11px] text-slate-500 gap-2">
+              <span class="flex items-center">
+                <i data-lucide="badge-check" class="w-3.5 h-3.5 text-emerald-600 mr-1"></i>
+                依據：高院 114上149 判決書 ｜ 專利 I589390 (夾持翻轉) ｜ 新型 M627444 (作動抑震)
+              </span>
+              <a href="https://law.judicial.gov.tw/" target="_blank" class="text-mckinsey-royal hover:underline flex items-center">
+                司法院裁判書查證 <i data-lucide="external-link" class="w-3 h-3 ml-0.5"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Sales Battle Card & Objection Handling (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Interactive Deck Preview Card -->
+          <div class="bg-gradient-to-br from-mckinsey-navy to-slate-900 rounded-2xl p-6 text-white shadow-xl relative overflow-hidden">
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-400 text-slate-950 uppercase">Zero-Noise PPTX</span>
+              <span class="text-xs text-slate-400 font-mono">12 Slides Deck</span>
+            </div>
+            <h4 class="text-base font-bold text-white mb-1">無雜訊頂尖顧問簡報（12 頁完整版）</h4>
+            <p class="text-xs text-slate-300 mb-4">
+              嚴格依據森秀明 8 種無雜訊版型，Action Title 置頂，三大管顧風格混搭，附三段式逐頁講稿備忘錄。
+            </p>
+            
+            <div class="bg-white/10 rounded-xl p-3 border border-white/15 mb-4 text-xs space-y-2">
+              <div class="flex justify-between items-center text-slate-300">
+                <span>涵蓋版型：</span>
+                <span class="font-mono text-amber-300">一對一 / 並列 / 結合 / 連鎖 / 麥肯錫 / 對立 / 比較 / BCG</span>
+              </div>
+              <div class="flex justify-between items-center text-slate-300">
+                <span>顧問視覺：</span>
+                <span class="font-mono text-emerald-300">McKinsey Navy・BCG Forest・Accenture Purple</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button onclick="openDeckModal(0)" class="w-full py-2.5 px-3 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-xs transition flex items-center justify-center space-x-1 shadow-md">
+                <i data-lucide="play" class="w-3.5 h-3.5 fill-current"></i>
+                <span>線上互動播放</span>
+              </button>
+              <a href="./sansing_consulting_deck.pptx" download class="w-full py-2.5 px-3 rounded-lg bg-white/15 hover:bg-white/25 text-white font-semibold text-xs transition flex items-center justify-center space-x-1 border border-white/20">
+                <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
+                <span>下載 .pptx 檔</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sales Objection Handling (Accordion) -->
+          <div class="glass-card rounded-2xl p-6 shadow-sm">
+            <h4 class="text-sm font-bold text-slate-900 flex items-center mb-3">
+              <i data-lucide="swords" class="w-4 h-4 text-amber-600 mr-2"></i>
+              前線業務攻防對抗指南（見招拆招話術）
+            </h4>
+            
+            <div class="space-y-2.5 text-xs">
+              <!-- Item 1 -->
+              <div class="border border-slate-200 rounded-xl p-3 bg-white hover:border-amber-400 transition cursor-pointer" onclick="toggleFaq(1)">
+                <div class="flex justify-between items-center font-bold text-slate-800">
+                  <span>客：「三星螺絲成型機才 400 萬，你們怎麼這麼貴？」</span>
+                  <i data-lucide="chevron-down" id="faq-icon-1" class="w-4 h-4 text-slate-400 transition-transform"></i>
+                </div>
+                <div id="faq-ans-1" class="mt-2 text-slate-600 pt-2 border-t border-slate-100 hidden leading-relaxed">
+                  <div class="text-[11px] text-amber-700 font-bold mb-1">【業務破解邏輯】拆解「標準空機」與「特殊專用模組」隱性成本</div>
+                  「老闆，415 萬是基本款，汽車級長衝程專用翻夾組是外加的。更重要的是妥善率，停機一天損失遠大於機台差價。」
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="border border-slate-200 rounded-xl p-3 bg-white hover:border-amber-400 transition cursor-pointer" onclick="toggleFaq(2)">
+                <div class="flex justify-between items-center font-bold text-slate-800">
+                  <span>客：「他們是不是上市公司那個三星螺絲（5007）？」</span>
+                  <i data-lucide="chevron-down" id="faq-icon-2" class="w-4 h-4 text-slate-400 transition-transform"></i>
+                </div>
+                <div id="faq-ans-2" class="mt-2 text-slate-600 pt-2 border-t border-slate-100 hidden leading-relaxed">
+                  <div class="text-[11px] text-amber-700 font-bold mb-1">【業務破解邏輯】破除借光混淆，回歸母體工廠實況</div>
+                  「老闆您誤會了，台南那是上市螺帽龍頭；這家是雲林斗南朝璟體系，全廠不到 20 人，跟上市公司完全無關，售後支援不能用上市資源來看。」
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="border border-slate-200 rounded-xl p-3 bg-white hover:border-amber-400 transition cursor-pointer" onclick="toggleFaq(3)">
+                <div class="flex justify-between items-center font-bold text-slate-800">
+                  <span>客：「他們交期很快，兩個月就能裝機試車。」</span>
+                  <i data-lucide="chevron-down" id="faq-icon-3" class="w-4 h-4 text-slate-400 transition-transform"></i>
+                </div>
+                <div id="faq-ans-3" class="mt-2 text-slate-600 pt-2 border-t border-slate-100 hidden leading-relaxed">
+                  <div class="text-[11px] text-amber-700 font-bold mb-1">【業務破解邏輯】鎖定「全配件驗收實質合約」</div>
+                  「快裝機常發生特殊模具配件未齊，最後卡在試車動彈不得。我們合約全配件到位、試沖樣品達標才結算尾款，確保產線不會開天窗。」
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ALL BD KNOWLEDGE BASE CARDS (EXTENSIBLE ARCHITECTURE) -->
+    <section id="all-intel" class="mb-14">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-3 border-b border-slate-200">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900">4.1.3 全站業務開發知識庫卡片</h3>
+          <p class="text-xs text-slate-500 mt-0.5">模組化收錄開發商會議、同業動態、海外拓銷報告，點擊可直接檢索與開啟對應簡報</p>
+        </div>
+        <div class="text-xs text-slate-500">
+          顯示 <span id="display-count" class="font-bold text-slate-900">5</span> 筆情資
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div id="intelCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- No Results State -->
+      <div id="noResultsState" class="hidden text-center py-16">
+        <i data-lucide="search-x" class="w-12 h-12 text-slate-300 mx-auto mb-3"></i>
+        <h4 class="text-base font-bold text-slate-700">找不到符合條件的業務情報</h4>
+        <p class="text-xs text-slate-400 mt-1">請嘗試縮減關鍵字或切換其他分類分類</p>
+        <button onclick="clearSearch()" class="mt-4 px-4 py-2 rounded-lg bg-slate-200 text-slate-700 text-xs font-semibold hover:bg-slate-300 transition">清除搜尋條件</button>
+      </div>
+    </section>
+
+    <!-- EXTENSION GUIDE: HOW TO ADD NEW INTEL IN THE FUTURE -->
+    <section class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-200 mb-10 shadow-sm">
+      <div class="flex items-start space-x-4">
+        <div class="w-10 h-10 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 shrink-0">
+          <i data-lucide="folder-plus" class="w-5 h-5"></i>
+        </div>
+        <div class="flex-grow">
+          <h4 class="text-base font-bold text-slate-900 mb-1">未來資料擴充架構指南（如何新增情資與簡報？）</h4>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            本入口網站採用解耦設計，未來任何新完成的拜訪會議、競品調研或海外商情，只需依照以下 2 步即可無縫整合進知識庫與搜尋引擎：
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs font-mono">
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+              <div class="font-bold text-purple-700 font-sans mb-1">步驟 1：存放簡報或文檔</div>
+              <div class="text-slate-600 font-sans">將產出的 `.pptx` 或 `.md` 放入指定資料夾（如 `4.1.3.1 市場訊息/`），命名採 `YYYYMMDD_主題`。</div>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+              <div class="font-bold text-purple-700 font-sans mb-1">步驟 2：登錄資料庫 JSON</div>
+              <div class="text-slate-600 font-sans">在 `data.json` 或 `index.html` 中的 `INTEL_DATABASE` 陣列加入一筆卡片物件（含標題、分類、標籤、摘要、連結）。</div>
+            </div>
+            <div class="bg-slate-50 p-3 rounded-xl border border-slate-200">
+              <div class="font-bold text-purple-700 font-sans mb-1">步驟 3：GitHub 自動發布</div>
+              <div class="text-slate-600 font-sans">執行 `git commit & push`，GitHub Pages 會在 30 秒內自動更新全網頁面與即時搜尋索引。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Slide Viewer Modal (Full Screen Ready) -->
+  <div id="deckModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-2 sm:p-6 transition-opacity">
+    <div class="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-6xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden text-white">
+      
+      <!-- Modal Header -->
+      <div class="px-5 py-3.5 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+        <div class="flex items-center space-x-3">
+          <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-400 text-slate-950">ZERO-NOISE DECK</span>
+          <h4 id="modalDeckTitle" class="text-sm font-bold text-white truncate max-w-md sm:max-w-xl">三星螺絲成型機有限公司・商業模式解構與業務作戰指引</h4>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button onclick="toggleNotesDrawer()" id="notesToggleBtn" class="px-2.5 py-1.5 rounded-lg border border-slate-700 text-slate-300 text-xs hover:bg-slate-800 transition flex items-center space-x-1">
+            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+            <span class="hidden sm:inline">講稿備忘錄</span>
+          </button>
+          <a href="./sansing_consulting_deck.pptx" download class="px-2.5 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition flex items-center space-x-1">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span class="hidden sm:inline">下載 PPTX</span>
+          </a>
+          <button onclick="closeDeckModal()" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide Viewport (16:9 Aspect Ratio Container) -->
+      <div class="flex-grow p-4 sm:p-6 flex items-center justify-center bg-slate-950 overflow-y-auto">
+        <div id="slideScreen" class="w-full max-w-4xl aspect-[16/9] bg-white text-slate-900 rounded-xl shadow-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden transition-all duration-300">
+          <!-- Slide Content Injected by JS -->
+        </div>
+      </div>
+
+      <!-- Speaker Notes Drawer (Collapsible) -->
+      <div id="speakerNotesDrawer" class="border-t border-slate-800 bg-slate-950/80 p-4 text-xs text-slate-300 hidden max-h-48 overflow-y-auto">
+        <div class="flex items-center space-x-2 text-amber-400 font-bold mb-1.5">
+          <i data-lucide="mic" class="w-3.5 h-3.5"></i>
+          <span>顧問三段式講稿備忘錄（Speaker Notes）</span>
+        </div>
+        <div id="notesContent" class="space-y-1 text-slate-300 leading-relaxed font-sans">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+
+      <!-- Modal Footer (Controls) -->
+      <div class="px-6 py-3.5 border-t border-slate-800 bg-slate-950/70 flex items-center justify-between text-xs">
+        <div class="flex items-center space-x-3">
+          <span id="slideCounter" class="font-mono font-bold text-amber-400">1 / 12</span>
+          <span id="slideLayoutTag" class="text-slate-400 hidden sm:inline text-[11px]">版型 1：一對一論法 ｜ McKinsey Style</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button onclick="prevSlide()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold transition flex items-center space-x-1">
+            <i data-lucide="chevron-left" class="w-4 h-4"></i>
+            <span>上一頁</span>
+          </button>
+          <button onclick="nextSlide()" class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold transition flex items-center space-x-1">
+            <span>下一頁</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 text-xs py-8 px-4 sm:px-8 mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">D</div>
+        <span class="font-semibold text-slate-300">DavidCloud 知識體系 ｜ 4.1.3 業務開發 (Business Development)</span>
+      </div>
+      <div>
+        方法論遵循：前 BCG 顧問森秀明《無雜訊簡報法》 × 麥肯錫金字塔原理 ｜ 研調資料實證於公開判決與專利
+      </div>
+    </div>
+  </footer>
+
+  <!-- DATA & LOGIC -->
+  <script>
+    // ==========================================
+    // 1. EXTENSIBLE INTEL DATABASE (可持續擴充資料集)
+    // ==========================================
+    const INTEL_DATABASE = [
+      {
+        id: 'sansing-forming-machinery',
+        category: 'market',
+        categoryLabel: '4.1.3.1 市場訊息',
+        categoryBadge: 'bg-amber-100 text-amber-800 border-amber-200',
+        title: '三星螺絲成型機有限公司（朝璟精機）實質商業模式與業務攻防指南',
+        date: '2026-10-14',
+        tags: ['成型機', '朝璟精機', '客單價415萬', '專利I589390', '作戰卡', '高院判決114上149'],
+        summary: '深度交叉查證商業模式全景圖，還原 415 萬單台合約價與訂金結構。釐清非上市三星科技 (5007)，並產出 12 頁無雜訊頂尖顧問簡報與 1 頁業務作戰卡。',
+        metrics: [
+          { label: '合約單價', value: '415 萬元' },
+          { label: '訂金比例', value: '23.1%' },
+          { label: '實質編制', value: '< 20 人' }
+        ],
+        hasDeck: true,
+        deckFile: './sansing_consulting_deck.pptx',
+        deckSlidesCount: 12,
+        actionUrl: '#featured-dossier'
+      },
+      {
+        id: 'yunbao-energy-interview',
+        category: 'market',
+        categoryLabel: '4.1.3.1 市場訊息',
+        categoryBadge: 'bg-amber-100 text-amber-800 border-amber-200',
+        title: '雲豹能源朱致昊訪談商情與電廠開發合作機會分析',
+        date: '2026-08-13',
+        tags: ['雲豹能源', '朱致昊', '綠電採購', '光電案場', '合作模式'],
+        summary: '整理雲豹能源在漁電共生、地面型案場與企業購售電合約 (CPPA) 之開發佈局節奏，分析潛在聯合投標與設備整合商機。',
+        metrics: [
+          { label: '主力型態', value: '漁電共生' },
+          { label: '合作焦點', value: 'CPPA媒合' }
+        ],
+        hasDeck: false,
+        actionUrl: 'javascript:alert("已連動 Obsidian 知識庫：20260813, 雲豹朱致昊訪談商情")'
+      },
+      {
+        id: 'lifeng-liao-developer-meeting',
+        category: 'developer',
+        categoryLabel: '4.1.3.1 開發商',
+        categoryBadge: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+        title: '利豐廖博會議・太陽光電與儲能案場業務開發追蹤',
+        date: '2026-09-21',
+        tags: ['利豐', '廖博', '儲能E-dReg', '土地整合', '開發追蹤'],
+        summary: '追蹤利豐儲能案場併網進度與饋線爭取現況，評估變電所擴建商機與土審用地變更關鍵里程碑。',
+        metrics: [
+          { label: '案場類型', value: 'E-dReg儲能' },
+          { label: '追蹤進度', value: '土地變更' }
+        ],
+        hasDeck: false,
+        actionUrl: 'javascript:alert("已連動 Obsidian 知識庫：20260921_利豐廖博會議-業務開發追蹤")'
+      },
+      {
+        id: 'wanjen-developer-review',
+        category: 'developer',
+        categoryLabel: '4.1.3.1 開發商',
+        categoryBadge: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+        title: '開發商業務會議（李宛真）・案場商機滾動式檢討',
+        date: '2026-08-04',
+        tags: ['李宛真', '屋頂型光電', '管考追蹤', 'EPC承攬', '維運續約'],
+        summary: '盤點中南部廠房屋頂型案場簽約進度，建立標準化開發商評估量表，優化 EPC 與長期維運綁約策略。',
+        metrics: [
+          { label: '案場規模', value: '屋頂型MW級' },
+          { label: '核心策略', value: 'EPC+維運' }
+        ],
+        hasDeck: false,
+        actionUrl: 'javascript:alert("已連動 Obsidian 知識庫：20260804_開發商會議(李宛真)_業務開發追蹤")'
+      },
+      {
+        id: 'thailand-green-energy-expansion',
+        category: 'global',
+        categoryLabel: '4.1.3.3 海外市場',
+        categoryBadge: 'bg-cyan-100 text-cyan-800 border-cyan-200',
+        title: '泰國 1.5GW 綠能政策與台商海外拓銷路徑分析',
+        date: '2026-09-11',
+        tags: ['泰國市場', '1.5GW政策', '東南亞擴張', '海外關稅', '綠色供應鏈'],
+        summary: '研析泰國能源委員會 (ERC) 擴大再生能源收購機制 (Feed-in Tariff) 對台商設備出海與跨國案場開發之稅務優惠。',
+        metrics: [
+          { label: '目標配額', value: '1.5 GW' },
+          { label: '政策工具', value: 'FiT保證收購' }
+        ],
+        hasDeck: false,
+        actionUrl: 'javascript:alert("已連動 Obsidian 知識庫：4.1.3.3 海外市場知識庫 - Thailand")'
+      }
+    ];
+
+    // ==========================================
+    // 2. SLIDES DATA FOR INTERACTIVE DECK VIEWER
+    // ==========================================
+    let SLIDES_CACHE = null;
+
+    async function loadSlidesData() {
+      if (SLIDES_CACHE) return SLIDES_CACHE;
+      try {
+        const res = await fetch('./slides_data.json');
+        if (res.ok) {
+          SLIDES_CACHE = await res.json();
+          return SLIDES_CACHE;
+        }
+      } catch (e) {
+        console.warn('Fallback to local embedded slides', e);
+      }
+      return [];
+    }
+
+    // ==========================================
+    // 3. RENDER CARDS & SEARCH LOGIC
+    // ==========================================
+    let currentFilter = 'all';
+
+    function renderCards(items) {
+      const grid = document.getElementById('intelCardsGrid');
+      const noRes = document.getElementById('noResultsState');
+      const countEl = document.getElementById('display-count');
+      
+      grid.innerHTML = '';
+      countEl.innerText = items.length;
+
+      if (items.length === 0) {
+        noRes.classList.remove('hidden');
+        return;
+      }
+      noRes.classList.add('hidden');
+
+      items.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "glass-card rounded-2xl p-5 border border-slate-200 hover:border-amber-400 hover:shadow-xl transition-all duration-200 flex flex-col justify-between group";
+
+        const tagsHtml = item.tags.map(t => `<span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded text-[10px] font-medium mr-1 mb-1 inline-block">#${t}</span>`).join('');
+        
+        const metricsHtml = item.metrics.map(m => `
+          <div class="bg-slate-50 p-2 rounded-lg text-center">
+            <div class="text-[10px] text-slate-400">${m.label}</div>
+            <div class="text-xs font-bold text-slate-800 font-mono">${m.value}</div>
+          </div>
+        `).join('');
+
+        const deckBadge = item.hasDeck ? `
+          <button onclick="openDeckModal(0)" class="text-[11px] font-bold text-emerald-700 bg-emerald-100/80 px-2.5 py-1 rounded-full flex items-center hover:bg-emerald-200 transition">
+            <i data-lucide="presentation" class="w-3 h-3 mr-1 inline"></i> ${item.deckSlidesCount} 頁無雜訊簡報
+          </button>
+        ` : '';
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between text-xs mb-2">
+              <span class="px-2 py-0.5 rounded text-[11px] font-semibold border ${item.categoryBadge}">${item.categoryLabel}</span>
+              <span class="text-slate-400 font-mono text-[11px]">${item.date}</span>
+            </div>
+
+            <h4 class="text-base font-bold text-slate-900 group-hover:text-amber-600 transition mb-2 leading-snug">
+              ${item.title}
+            </h4>
+
+            <p class="text-xs text-slate-600 leading-relaxed mb-3 line-clamp-3">
+              ${item.summary}
+            </p>
+
+            <div class="flex flex-wrap mb-4">
+              ${tagsHtml}
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4 pt-2 border-t border-slate-100">
+              ${metricsHtml}
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+            <div>${deckBadge}</div>
+            <a href="${item.actionUrl}" class="text-xs font-bold text-slate-700 hover:text-amber-600 flex items-center transition ml-auto">
+              <span>查看詳情</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      lucide.createIcons();
+    }
+
+    function handleSearch() {
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+      const clearBtn = document.getElementById('clearSearchBtn');
+      
+      if (q.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      let filtered = INTEL_DATABASE.filter(item => {
+        const matchesCategory = (currentFilter === 'all') || 
+                                (currentFilter === 'deck' && item.hasDeck) || 
+                                (item.category === currentFilter);
+        if (!matchesCategory) return false;
+
+        if (!q) return true;
+        const textToSearch = `${item.title} ${item.summary} ${item.tags.join(' ')} ${item.categoryLabel}`.toLowerCase();
+        return textToSearch.includes(q);
+      });
+
+      renderCards(filtered);
+    }
+
+    function clearSearch() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('clearSearchBtn').classList.add('hidden');
+      handleSearch();
+    }
+
+    function filterCategory(cat) {
+      currentFilter = cat;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        btn.classList.remove('active', 'bg-white/20', 'text-white', 'border-white/20');
+        btn.classList.add('bg-white/5', 'text-slate-300', 'border-white/10');
+      });
+      event.target.classList.add('active', 'bg-white/20', 'text-white', 'border-white/20');
+      handleSearch();
+    }
+
+    function scrollToFeatured() {
+      document.getElementById('featured-dossier').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleFaq(id) {
+      const ans = document.getElementById(`faq-ans-${id}`);
+      const icon = document.getElementById(`faq-icon-${id}`);
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        ans.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // ==========================================
+    // 4. COPY 1-PAGE BATTLE CARD TO CLIPBOARD
+    // ==========================================
+    function copyBattleCard() {
+      const text = `【4.1.3 業務作戰卡】三星螺絲成型機有限公司（朝璟精機）
+────────────────────────────────────────────────────────────
+一、基本輪廓速覽
+• 公司主體：三星螺絲成型機有限公司（統編：90218985，負責人：廖冠傑）
+• 歷史前身：朝璟精機有限公司（統編：24408648，負責人：許良財，近30年機械廠）
+• 工廠地址：雲林縣斗南鎮大同路402號（工廠登記編號：09000178）
+• 團隊編制：極簡精兵架構，全廠不超過 20 人
+• 重要警示：非上市公司「三星科技(5007.TW)」，無任何股權與從屬關係！
+
+二、底層定價與付款條件（司法判決實證：高分院114上149）
+• 標竿客單價：長衝程特殊零件成型機（PF86L/13B）單台 415 萬元（未稅）
+• 付款週期：簽約預付約 23% 訂金（案例付 96 萬），機台到廠試車後收剩餘 75% 尾款
+• 交期策略：主力 5~10mm 線徑機台常備標準模組毛胚，主打 2~4 個月快速交機
+
+三、核心防禦盾與技術資產
+• 發明專利 I589390：成型機之夾持裝置（「會翻會夾組」，解決多模次翻轉卡料）
+• 新型專利 M627444：具抑制作動震動之成型機（專利偏心平衡，降低噪音提高模具壽命）
+• 零組件混血：日本進口滾柱軸承與合金鋼 ＋ 台灣 FCD 球墨鑄件
+
+四、前線三大攻防話術金句
+1. 客戶壓價：「老闆，415萬是空機價，汽車級翻夾組是外加的。更要看全廠不到20人，旺季叫修排隊等多久？停機一天損失遠大於機台差價！」
+2. 品牌混淆：「老闆您誤會了，台南那是上市螺帽龍頭；這家是雲林斗南朝璟體系，跟上市公司完全無關，售後保固不能混為一談！」
+3. 交期催促：「快裝機常發生特殊模具配件未齊，最後卡在試車動彈不得。我們合約全配件到位、打樣達標才結算尾款，保障您的產線不會開天窗！」
+────────────────────────────────────────────────────────────
+情報來源：經濟部商工登記・高院判決114上149・智財局專利公報・Fastener World專訪`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copyBtnText');
+        btn.innerText = '已成功複製！';
+        setTimeout(() => { btn.innerText = '複製 1 頁業務作戰卡'; }, 2000);
+      });
+    }
+
+    // ==========================================
+    // 5. INTERACTIVE ZERO-NOISE DECK MODAL
+    // ==========================================
+    let currentSlideIdx = 0;
+    let slidesList = [];
+
+    async function openDeckModal(idx = 0) {
+      slidesList = await loadSlidesData();
+      if (!slidesList || slidesList.length === 0) {
+        alert('簡報資料載入中，請稍候...');
+        return;
+      }
+      currentSlideIdx = idx;
+      document.getElementById('deckModal').classList.remove('hidden');
+      renderCurrentSlide();
+      lucide.createIcons();
+    }
+
+    function closeDeckModal() {
+      document.getElementById('deckModal').classList.add('hidden');
+    }
+
+    function toggleNotesDrawer() {
+      const drawer = document.getElementById('speakerNotesDrawer');
+      drawer.classList.toggle('hidden');
+    }
+
+    function prevSlide() {
+      if (currentSlideIdx > 0) {
+        currentSlideIdx--;
+        renderCurrentSlide();
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlideIdx < slidesList.length - 1) {
+        currentSlideIdx++;
+        renderCurrentSlide();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const modal = document.getElementById('deckModal');
+      if (modal && !modal.classList.contains('hidden')) {
+        if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+        if (e.key === 'ArrowLeft') prevSlide();
+        if (e.key === 'Escape') closeDeckModal();
+      }
+    });
+
+    function renderCurrentSlide() {
+      const s = slidesList[currentSlideIdx];
+      const screen = document.getElementById('slideScreen');
+      const counter = document.getElementById('slideCounter');
+      const layoutTag = document.getElementById('slideLayoutTag');
+      const notesContent = document.getElementById('notesContent');
+
+      counter.innerText = `${currentSlideIdx + 1} / ${slidesList.length}`;
+      layoutTag.innerText = `${s.layout_label || s.type} ｜ ${s.style || 'Consulting'} Style`;
+
+      // Update speaker notes
+      const notes = s.speaker_notes || {};
+      notesContent.innerHTML = `
+        <p><strong>① 本頁結論：</strong>${notes.conclusion || s.conclusion_title || ''}</p>
+        <p><strong>② 補充說明：</strong>${notes.explanation || ''}</p>
+        <p><strong>③ 下一頁轉場：</strong>${notes.transition || ''}</p>
+      `;
+
+      // Render slide content based on type
+      if (s.type === 'cover') {
+        screen.className = "w-full max-w-4xl aspect-[16/9] bg-mckinsey-navy text-white rounded-xl shadow-2xl p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden";
+        screen.innerHTML = `
+          <div>
+            <div class="w-16 h-1.5 bg-amber-500 mb-6"></div>
+            <p class="text-xs font-bold text-amber-400 uppercase tracking-widest mb-2">${s.category || '4.1.3 業務戰情專報'}</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">${s.title}</h1>
+            <p class="text-base sm:text-lg text-slate-300 font-medium max-w-2xl leading-relaxed">
+              核心主張：${s.core_claim || ''}
+            </p>
+          </div>
+          <div class="pt-6 border-t border-slate-700/80 text-xs text-slate-400 flex flex-wrap justify-between items-center">
+            <span>${s.meta || ''}</span>
+            <span class="text-amber-400 font-mono">16:9 Zero-Noise Format</span>
+          </div>
+        `;
+        return;
+      }
+
+      screen.className = "w-full max-w-4xl aspect-[16/9] bg-white text-slate-900 rounded-xl shadow-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden";
+      
+      let bodyHtml = '';
+
+      if (s.type === 'one_to_one') {
+        const barsHtml = (s.bars || []).map(b => {
+          const isFocus = b.highlight;
+          const hPercent = Math.min(100, Math.max(15, (b.value / 1600) * 100));
+          return `
+            <div class="flex-1 flex flex-col items-center justify-end h-48">
+              <span class="text-xs font-bold mb-1 font-mono ${isFocus ? 'text-amber-600 text-sm' : 'text-slate-400'}">${b.display}</span>
+              <div class="w-full max-w-[48px] rounded-t-md transition-all ${isFocus ? 'bg-amber-500 shadow-md' : 'bg-slate-200'}" style="height: ${hPercent}%"></div>
+              <span class="text-[11px] mt-2 font-medium text-center ${isFocus ? 'font-bold text-slate-900' : 'text-slate-500'}">${b.label}</span>
+            </div>
+          `;
+        }).join('');
+
+        const pointsHtml = (s.callout_points || []).map(p => `<li class="flex items-start mb-2"><span class="text-amber-500 font-bold mr-1.5">•</span><span>${p}</span></li>`).join('');
+
+        bodyHtml = `
+          <div class="grid grid-cols-12 gap-6 my-auto">
+            <div class="col-span-7 flex items-end justify-between space-x-2 pt-4">
+              ${barsHtml}
+            </div>
+            <div class="col-span-5 bg-amber-50/70 border border-amber-300 rounded-xl p-4 flex flex-col justify-center">
+              <h5 class="text-sm font-bold text-amber-900 mb-2">${s.callout_title}</h5>
+              <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                ${pointsHtml}
+              </ul>
+            </div>
+          </div>
+        `;
+      } else if (s.type === 'parallel') {
+        const cardsHtml = (s.cards || []).map((c, i) => {
+          const pts = (c.points || []).map((p, idx) => `<li class="mb-1.5"><strong>${idx + 1}.</strong> ${p}</li>`).join('');
+          return `
+            <div class="flex-1 bg-slate-50 border border-slate-200 rounded-xl overflow-hidden flex flex-col">
+              <div class="bg-slate-800 text-white font-bold text-xs py-2 px-3 text-center">${c.title}</div>
+              <ul class="p-3 text-xs text-slate-700 space-y-1 flex-grow">${pts}</ul>
+            </div>
+          `;
+        }).join('');
+
+        bodyHtml = `
+          <div class="flex flex-col sm:flex-row gap-3 my-auto">
+            ${cardsHtml}
+          </div>
+        `;
+      } else if (s.type === 'opposition') {
+        const rowsHtml = (s.dimensions || []).map(d => `
+          <div class="grid grid-cols-12 text-xs py-2 border-b border-slate-100 items-center">
+            <div class="col-span-2 font-bold text-slate-500">${d.dim}</div>
+            <div class="col-span-5 pr-3 text-slate-600">${d.item_a}</div>
+            <div class="col-span-5 pl-3 text-amber-700 font-semibold border-l border-slate-200">${d.item_b}</div>
+          </div>
+        `).join('');
+
+        bodyHtml = `
+          <div class="my-auto">
+            <div class="grid grid-cols-12 text-xs font-bold py-2 bg-slate-100 rounded-lg px-2 mb-2">
+              <div class="col-span-2 text-slate-500">評估維度</div>
+              <div class="col-span-5 text-slate-700">${s.left_title}</div>
+              <div class="col-span-5 text-amber-800">${s.right_title}</div>
+            </div>
+            ${rowsHtml}
+          </div>
+        `;
+      } else if (s.type === 'chain') {
+        const stepsHtml = (s.steps || []).map((st, i) => {
+          const items = (st.items || []).map(it => `<li>• ${it}</li>`).join('');
+          return `
+            <div class="flex-1 bg-slate-50 border border-slate-200 rounded-xl p-3 flex flex-col">
+              <div class="text-[10px] uppercase font-bold text-accenture-purple mb-1 font-mono">STEP 0${i+1}</div>
+              <div class="text-xs font-bold text-slate-900 mb-2 pb-1 border-b border-slate-200">${st.stage}</div>
+              <ul class="text-[11px] text-slate-600 space-y-1">${items}</ul>
+            </div>
+          `;
+        }).join('');
+
+        bodyHtml = `
+          <div class="my-auto">
+            <div class="bg-accenture-purple text-white text-[11px] font-bold py-1.5 px-4 rounded-lg mb-4 text-center">
+              ${s.flow_label}
+            </div>
+            <div class="flex flex-col sm:flex-row gap-2.5">
+              ${stepsHtml}
+            </div>
+          </div>
+        `;
+      } else {
+        // Fallback generic card
+        bodyHtml = `
+          <div class="my-auto p-4 bg-slate-50 rounded-xl text-xs text-slate-700">
+            <p class="font-bold text-sm text-slate-900 mb-2">${s.top_claim || s.conclusion_title}</p>
+            <p>${s.subtitle || ''}</p>
+          </div>
+        `;
+      }
+
+      screen.innerHTML = `
+        <div>
+          <!-- Header -->
+          <div class="flex justify-between items-center text-xs mb-1">
+            <span class="font-bold text-amber-600 uppercase tracking-wider">${s.category || '策略專報'}</span>
+            <span class="text-slate-400 font-mono text-[11px]">${s.layout_label || ''}</span>
+          </div>
+          <!-- Action Title -->
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug mb-1">
+            ${s.conclusion_title || s.title}
+          </h2>
+          <p class="text-xs text-slate-500 mb-3">${s.subtitle || ''}</p>
+          <div class="w-full h-px bg-slate-200 mb-3"></div>
+        </div>
+
+        <!-- Body -->
+        ${bodyHtml}
+
+        <!-- Footer -->
+        <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-[10px] text-slate-400">
+          <span>${s.footer || '4.1.3 業務開發戰情專報 ｜ 無雜訊顧問簡報'}</span>
+          <span class="font-mono">Page ${currentSlideIdx + 1}</span>
+        </div>
+      `;
+    }
+
+    // ==========================================
+    // 6. INITIALIZATION
+    // ==========================================
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCards(INTEL_DATABASE);
+      loadSlidesData();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
